@@ -1,15 +1,13 @@
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./App.css";
-
 import Profiles from "./components/profiles";
 import Paginate from "./components/pagination";
 import SearchPage from "./components/searchpage";
-dotenv.config();
-const url = process.env.API_URL;
 
+const url = process.env.REACT_APP_API_URL;
 
 function App() {
   const [profiles, setProfiles] = useState([]);

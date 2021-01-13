@@ -36,7 +36,7 @@ const SearchPage = ({ profiles }) => {
         <input
           className="form-control mr-sm-2"
           type="search"
-          placeholder="Search by name e.g Andrew young"
+          placeholder="Search by name e.g Uche Nnadi"
           aria-label="Search"
           onChange={(e) => updateInput(e)}
         />
