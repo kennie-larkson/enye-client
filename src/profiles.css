@@ -1,0 +1,24 @@
+.profiles {
+  display: flex;
+  direction: row;
+  margin: 15px;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+.profile-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
+}
+
+/* .list-items {
+  margin: 5px;
+  background-color: khaki;
+} */
+
+.single-profile {
+  /* color: goldenrod; */
+  padding: 5px;
+  background-color: skyblue;
+}
