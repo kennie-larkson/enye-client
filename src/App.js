@@ -1,9 +1,15 @@
+import dotenv from "dotenv";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+
 import "./App.css";
+
 import Profiles from "./components/profiles";
 import Paginate from "./components/pagination";
 import SearchPage from "./components/searchpage";
+dotenv.config();
+const url = process.env.API_URL;
+
 
 function App() {
   const [profiles, setProfiles] = useState([]);
@@ -14,9 +20,7 @@ function App() {
   const fetchApi = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(
-        "http://api.enye.tech/v1/challenge/records"
-      );
+      const response = await axios.get(url);
 
       const {
         data: {
@@ -51,7 +55,7 @@ function App() {
       <h3 className="text-primary mb-3">
         <p>
           Search our customer records either by customer name, credit card type,
-          gender and payment method{" "}
+          gender or payment method{" "}
         </p>
       </h3>
       <SearchPage profiles={profiles} />
