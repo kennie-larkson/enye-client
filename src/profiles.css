@@ -9,7 +9,7 @@
 .profile-list {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 160px;
+  flex: 2 2 160px;
   padding: 5px;
   align-items: center;
   justify-content: center;
