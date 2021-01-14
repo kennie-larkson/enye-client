@@ -1,15 +1,19 @@
 .profiles {
   display: flex;
-  direction: row;
   margin: 15px;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   border-radius: 5px;
+  /* padding: 5px; */
 }
 
 .profile-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 160px;
   padding: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
 }
 
 /* .list-items {
@@ -21,4 +25,5 @@
   /* color: goldenrod; */
   padding: 5px;
   background-color: skyblue;
+  margin: 2px;
 }

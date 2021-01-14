@@ -32,7 +32,7 @@ const SearchPage = ({ profiles }) => {
 
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light bg-light ">
         <input
           className="form-control mr-sm-2"
           type="search"
